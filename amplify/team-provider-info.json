@@ -1,0 +1,20 @@
+{
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-auth0svelte-prod-3ee01-authRole",
+      "UnauthRoleArn": "arn:aws:iam::813381851151:role/amplify-auth0svelte-prod-3ee01-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::813381851151:role/amplify-auth0svelte-prod-3ee01-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-auth0svelte-prod-3ee01-deployment",
+      "UnauthRoleName": "amplify-auth0svelte-prod-3ee01-unauthRole",
+      "StackName": "amplify-auth0svelte-prod-3ee01",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:813381851151:stack/amplify-auth0svelte-prod-3ee01/e8b24590-4675-11ef-939b-0ecdca17aab3",
+      "AmplifyAppId": "d32jfx4dfhza97"
+    },
+    "categories": {
+      "hosting": {
+        "S3AndCloudFront": {}
+      }
+    }
+  }
+}

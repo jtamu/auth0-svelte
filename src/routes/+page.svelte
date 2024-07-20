@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { PUBLIC_REDIRECT_URI } from '$env/static/public';
 	import { Auth0Client, createAuth0Client, User } from '@auth0/auth0-spa-js';
 	import { onMount } from 'svelte';
 
@@ -13,7 +14,7 @@
 			domain: config.domain,
 			clientId: config.clientId,
 			authorizationParams: {
-				redirect_uri: 'http://localhost:5173'
+				redirect_uri: PUBLIC_REDIRECT_URI
 			}
 		});
 	});
