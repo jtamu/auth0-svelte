@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - npm install -g @aws-amplify/cli
+      - npm ci
+  pre_build:
+    commands:
+      - env >> .env.production
+  build:
+    commands:
+      - amplify publish -y
