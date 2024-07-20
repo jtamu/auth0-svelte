@@ -2,12 +2,16 @@ version: 0.2
 
 phases:
   install:
+    on-failure: ABORT
     commands:
       - npm install -g @aws-amplify/cli
       - npm ci
   pre_build:
+    on-failure: ABORT
     commands:
       - env >> .env.production
   build:
+    on-failure: ABORT
     commands:
+      - amplify init
       - amplify publish -y
